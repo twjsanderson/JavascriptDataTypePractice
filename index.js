@@ -49,3 +49,10 @@ console.log("NaN should not be equal to NaN:  ", NaN === NaN)
 
 // NaN data type is number
 console.log("NaN data type is number: ", typeof NaN === typeof 2)
+
+// Null data type is an object
+console.log("Null data type is an object: ", typeof null, typeof null === typeof {})
+
+console.log("type of undefined: ", typeof undefined, " type of null: ", typeof null) 
+console.log("null is NOT deeply equivalent to undefined: ", null === undefined, " null is shallowly equivalent to undefined: ", null == undefined)
+
