@@ -56,3 +56,36 @@ console.log("Null data type is an object: ", typeof null, typeof null === typeof
 console.log("type of undefined: ", typeof undefined, " type of null: ", typeof null) 
 console.log("null is NOT deeply equivalent to undefined: ", null === undefined, " null is shallowly equivalent to undefined: ", null == undefined)
 
+// JavaScript declarations are hoisted, initializations are not.
+// Declaration (Will be hoisted)
+// x = 9;
+// let x;
+// Initialization (Will not be hoisted)
+// ...code that uses x
+// let x = 9;
+
+// What is a JS closure? When a inner function has access to an outer enclosing functions variables Lexical Scope
+function outer() {
+    let x = 0;
+
+    function inner() {
+        return x + 1;
+        // has access to the x variable
+    }
+    
+    return inner()
+}
+
+console.log(outer())
+
+// Global Scope
+// Variables accessible by all entities within the code
+
+// Lexical/Static Scope 
+// Inner levels of a function can access all variables and functions in the outer levels or enclosed function
+
+
+
+
+
+
